@@ -1046,35 +1046,9 @@
     <div style="margin-top: 60px;">
       <div class="section-tag">Интерфейс</div>
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 24px;">
-        <div class="img-placeholder md">
-          <div class="img-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-            </svg>
-          </div>
-          <div class="img-label">Экран расшифровки</div>
-          <div class="img-hint">images/ml-screen.png</div>
-        </div>
-
-        <div class="img-placeholder md">
-          <div class="img-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-            </svg>
-          </div>
-          <div class="img-label">Task Manager</div>
-          <div class="img-hint">images/taskmanager.png</div>
-        </div>
-
-        <div class="img-placeholder md">
-          <div class="img-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-            </svg>
-          </div>
-          <div class="img-label">Messenger</div>
-          <div class="img-hint">images/messenger.png</div>
-        </div>
+        <img src="images/shifr.jpg" alt="расшифровка" style="width:100%; border-radius:12px; display:block;">
+        <img src="images/task.jpg" alt="таск менеджер" style="width:100%; border-radius:12px; display:block;">
+        <img src="images/messenger.jpg" alt="мессенджер" style="width:100%; border-radius:12px; display:block;">
       </div>
     </div>
   </div>
@@ -1301,36 +1275,9 @@
           <p>
             Команда собрана — больше 30 студентов из разных групп. Запущен первый ML-пайплайн для расшифровки видеолекций: API принимает видео, извлекает аудио, прогоняет через Whisper STT и отдаёт текст. Параллельно разработан UI авторизации на React, спроектирована БД в PostgreSQL, созданы базовые REST-эндпоинты. Развёрнута база данных на сервере, начато оформление Figma-дизайна всех экранов.
           </p>
-          <!--
-            КАК ВСТАВИТЬ КАРТИНКУ В ЗАПИСЬ ЖУРНАЛА:
-            Замените блок img-placeholder на:
-            <img src="images/oct-screenshot.png" alt="Старт проекта" style="width:100%; border-radius:10px; display:block; margin-top:16px;">
-
-            Или для двух картинок рядом используйте класс journal-img-row:
-            <div class="journal-img-row">
-              <img src="images/oct-1.png" alt="..." style="width:100%; border-radius:10px; display:block;">
-              <img src="images/oct-2.png" alt="..." style="width:100%; border-radius:10px; display:block;">
-            </div>
-          -->
           <div class="journal-img-row">
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Скрин / фото</div>
-              <div class="img-hint">images/oct-1.png</div>
-            </div>
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Скрин / фото</div>
-              <div class="img-hint">images/oct-2.png</div>
-            </div>
+            <img src="images/video1.jpg" alt="видео-1" style="width:100%; border-radius:12px; display:block;">
+            <img src="images/video2.jpg" alt="видео-2" style="width:100%; border-radius:12px; display:block;">
           </div>
           <div class="journal-tags">
             <span class="tag">ML Pipeline v1</span>
@@ -1352,24 +1299,8 @@
             Бэкенд полностью переведён на реальную БД и S3-хранилище. Подключена авторизация через JWT с хранением сессий в PostgreSQL. ML-сервис переведён на асинхронные задачи — пользователь видит статус обработки в реальном времени. Фронтенд интегрирован с API: загрузка видео с прогресс-баром, страница результатов, экспорт. Настроен Coolify для автодеплоя. Проведена защита первого семестра.
           </p>
           <div class="journal-img-row">
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Скрин / фото</div>
-              <div class="img-hint">images/dec-1.png</div>
-            </div>
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Скрин / фото</div>
-              <div class="img-hint">images/dec-2.png</div>
-            </div>
+            <img src="images/back1.jpg" alt= "бэк" style="width:100%; border-radius:12px; display:block;">
+            <img src="images/back2.jpg" alt="бэк" style="width:100%; border-radius:12px; display:block;">
           </div>
           <div class="journal-tags">
             <span class="tag">PostgreSQL</span>
@@ -1392,24 +1323,8 @@
             Реализован модуль Task Manager — полноценный аналог WEEEK в стиле Мосполитеха. На бэкенде: схема данных досок, колонок и карточек, CRUD API, reorder с пересчётом позиций, теги, участники. На фронтенде: kanban-доска с drag&drop внутри и между колонками, карточки с assignee и дедлайном, быстрое создание задач, фильтрация. Собран полный UI-kit, проведено e2e-тестирование.
           </p>
           <div class="journal-img-row">
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Kanban-доска</div>
-              <div class="img-hint">images/kanban.png</div>
-            </div>
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Карточка задачи</div>
-              <div class="img-hint">images/card.png</div>
-            </div>
+            <img src="images/men1.jpg" alt="тм" style="width:100%; border-radius:12px; display:block;">
+            <img src="images/men2.jpg" alt="тм" style="width:100%; border-radius:12px; display:block;">
           </div>
           <div class="journal-tags">
             <span class="tag">Kanban Board</span>
@@ -1432,24 +1347,8 @@
             Запущен Messenger с каналами, личными сообщениями и инфраструктурой для real-time. Дизайн полностью перепроектирован: новые макеты, редизайн Task Manager. Проведена инвентаризация API, закрыты все пробелы для ТОП-10 страниц. Настроены инструкции по логам, шаблоны env. Проект подготовлен к итоговой защите.
           </p>
           <div class="journal-img-row">
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Messenger</div>
-              <div class="img-hint">images/messenger-final.png</div>
-            </div>
-            <div class="img-placeholder sm">
-              <div class="img-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
-              </div>
-              <div class="img-label">Итоговый вид</div>
-              <div class="img-hint">images/final.png</div>
-            </div>
+            <img src="images/mess1.jpg" alt="мессенджер" style="width:100%; border-radius:12px; display:block;">
+            <img src="images/mess2.jpg" alt="мессенджер" style="width:100%; border-radius:12px; display:block;">
           </div>
           <div class="journal-tags">
             <span class="tag">Messenger</span>
@@ -1560,75 +1459,6 @@
     <div style="font-size:11px; opacity:0.5">v2.0 · Task Manager + Messenger</div>
   </footer>
 </div>
-
-<!-- ============================================================ -->
-<!-- ИНСТРУКЦИЯ ПО ВСТАВКЕ КАРТИНОК (скрытый блок, только в коде) -->
-<!--
-=================================================================
-  КАК ВСТАВИТЬ СВОИ КАРТИНКИ
-=================================================================
-
-  1. Создайте папку "images" рядом с этим HTML-файлом.
-     Структура файлов:
-       index.html
-       images/
-         main-screen.png
-         ml-screen.png
-         taskmanager.png
-         messenger.png
-         team-photo.jpg
-         oct-1.png
-         oct-2.png
-         dec-1.png
-         dec-2.png
-         kanban.png
-         card.png
-         messenger-final.png
-         final.png
-
-  2. Найдите в коде блок с нужным placeholder, например:
-       <div class="img-placeholder md">
-         ...
-         <div class="img-hint">images/ml-screen.png</div>
-       </div>
-
-  3. Замените ВЕСЬ блок <div class="img-placeholder ...">...</div>
-     на тег <img>:
-
-     ДО:
-       <div class="img-placeholder md">
-         <div class="img-icon">...</div>
-         <div class="img-label">Экран расшифровки</div>
-         <div class="img-hint">images/ml-screen.png</div>
-       </div>
-
-     ПОСЛЕ:
-       <img
-         src="images/ml-screen.png"
-         alt="Экран расшифровки SPARQ"
-         style="width:100%; border-radius:12px; display:block;"
-       >
-
-  4. Для двух картинок рядом (journal-img-row):
-     ДО:
-       <div class="journal-img-row">
-         <div class="img-placeholder sm">...</div>
-         <div class="img-placeholder sm">...</div>
-       </div>
-
-     ПОСЛЕ:
-       <div class="journal-img-row">
-         <img src="images/oct-1.png" alt="..." style="width:100%; border-radius:10px; display:block;">
-         <img src="images/oct-2.png" alt="..." style="width:100%; border-radius:10px; display:block;">
-       </div>
-
-  5. Рекомендуемые размеры:
-     - Скриншоты интерфейса: 1280x800 px, формат PNG или WebP
-     - Фото команды: 1600x600 px, формат JPG
-     - Фото в журнале: 800x450 px, формат JPG или PNG
-
-=================================================================
--->
 
 <script>
   // ---- НАВИГАЦИЯ МЕЖДУ СТРАНИЦАМИ ----
